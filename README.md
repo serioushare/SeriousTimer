@@ -1,0 +1,2 @@
+# SHTimer
+Advanced Javascript Timer
