@@ -12,7 +12,7 @@ While working on an other project, I found myself in need of a JavaScript timer 
 * Use event listeners to respond to events happening within the timer
 
 ### Class: Timer
-#### Properties
+#### Properties:
 * Number bottom
 * Number interval
 * Boolean loop
@@ -20,3 +20,14 @@ While working on an other project, I found myself in need of a JavaScript timer 
 * Number state
 * Number time
 * Number top
+#### Methods:
+* Void pause
+* Void play
+#### Events:
+* bottom
+* pause
+* play
+* reset
+* stop
+* top
+* update
