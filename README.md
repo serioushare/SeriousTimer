@@ -10,3 +10,13 @@ While working on an other project, I found myself in need of a JavaScript timer 
 * Cap the time within a set range
 * Loop over the defined range
 * Use event listeners to respond to events happening within the timer
+
+### Class: Timer
+#### Properties
+* Number bottom
+* Number interval
+* Boolean loop
+* Number speed
+* Number state
+* Number time
+* Number top
