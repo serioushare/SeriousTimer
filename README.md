@@ -1,5 +1,10 @@
 # SHTimer by Serious Hare
-While working on an other project, I found myself in need of a JavaScript timer that had some more complex features. For instance, it needed to go both ways (counting up or down), work with times below zero, support different speeds, and trigger events at irregular points instead of a constant interval. 
+(Currently prepping the repository)
+
+## Introduction
+While working on an other project, I found myself in need of a JavaScript timer that had some more complex features. For instance, it needed to go both ways (counting up or down), work with times below zero, support different speeds, and trigger events at irregular points instead of a constant interval.
+
+The goal of SHTimer is to offer a timer that takes minimal code if you need simple operation, but also offer lots of options for more complex scenarios.
 
 ## Features
 * Control the state (play/pause/stop)
