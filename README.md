@@ -21,13 +21,24 @@ While working on an other project, I found myself in need of a JavaScript timer 
 * Number time
 * Number top
 #### Methods:
+* Void addEventListener
+* Integer addMarker
+* Void dispatchEvent
+* Void fastBackward
+* Void fastForward
 * Void pause
 * Void play
+* Void playBackward
+* Void removeEventListener
+* Void removeMarker
+* Void reset
+* Void stop
 #### Events:
 * bottom
-* pause
+* marker
 * play
 * reset
 * stop
+* tick
 * top
 * update
