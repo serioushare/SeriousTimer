@@ -11,34 +11,6 @@ While working on an other project, I found myself in need of a JavaScript timer 
 * Loop over the defined range
 * Use event listeners to respond to events happening within the timer
 
-### Class: Timer
-#### Properties:
-* Number bottom
-* Number interval
-* Boolean loop
-* Number speed
-* Number state
-* Number time
-* Number top
-#### Methods:
-* Void addEventListener
-* Integer addMarker
-* Void dispatchEvent
-* Void fastBackward
-* Void fastForward
-* Void pause
-* Void play
-* Void playBackward
-* Void removeEventListener
-* Void removeMarker
-* Void reset
-* Void stop
-#### Events:
-* bottom
-* marker
-* play
-* reset
-* stop
-* tick
-* top
-* update
+`
+var timer = new Timer()
+`
