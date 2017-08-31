@@ -1,5 +1,4 @@
 # SeriousTimer.js by Serious Hare
-(Currently prepping the repository)
 
 ## Introduction
 While working on an other project, I found myself in need of a javascript timer that had some more complex features. For instance, it needed to go both ways (counting up or down), work with times below zero, support different speeds, and trigger events at irregular points instead of a constant interval.
@@ -16,12 +15,7 @@ The goal of SeriousTimer is to offer a timer that takes minimal code if you need
 * Loop over the defined range
 * Use event listeners to respond to events happening within the timer
 
-## Intallation
-### On Webpages
-#### Local installation
-1. Download the build version you want from the Builds directory.
-2. Place <script type="application/javascript" scr="path/to/stimer(.min).js"></script> in your html page
-
-#### Hosted by us
-
-
+## Changelog
+#### Version 0.1.0001
+* Initial release.
+* Mostly commented and refactored.
