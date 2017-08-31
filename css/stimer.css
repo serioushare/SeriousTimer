@@ -1,0 +1,70 @@
+
+.shtimer-ui{
+	display:block;
+	position:absolute;
+	
+	
+	padding:5px;
+	
+	color:rgba(240,240,240,1);
+	background-color:rgba(15,15,15,1);
+	
+	border-radius:5px;
+	
+	font-family:consolas, "Courier New", Courier, monospace;
+	font-size:12px;
+	
+	text-align:center;
+	
+	opacity:0.75;
+}
+
+.shtimer-ui-controls{
+	top:15px;
+	right:15px;
+	width:220px;
+}
+
+.shtimer-ui-markers{
+	top:75px;
+	right:15px;
+	width:220px;
+
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+.shtimer-ui-codepanel{
+	left:15px;
+	top:15px;
+	
+	text-align:left;
+}
+
+.shtimer-ui-code{
+	display:block;
+	
+	width:800px;
+	height:600px;
+	
+	margin-top:5px;
+		
+	font-family:consolas, "Courier New", Courier, monospace;
+}
+
+.shtimer-ui-time{
+	margin-bottom:2px;
+	
+	font-size:14px;
+}
+
+.shtimer-ui-buttons{
+	
+}
+
+.shtimer-ui-button{
+	color:rgba(240,240,240,1);
+	background-color:transparent;
+	
+	border:none;
+}
