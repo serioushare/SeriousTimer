@@ -15,6 +15,43 @@ The goal of SeriousTimer is to offer a timer that takes minimal code if you need
 * Loop over the defined range
 * Use event listeners to respond to events happening within the timer
 
+## Examples
+#### Simple repeating timer
+```javascript
+// create the timer 
+var timer = new Timer(0, 1000);
+
+// add a listener to ontick
+timer.ontick = function(event){
+    console.info("tick");
+}
+
+//start the timer
+timer.play();
+```
+#### Using markers
+```javascript
+// create the timer
+var timer = new Timer(0);
+
+// add a marker that fires after 1 second
+timer.addMarker(1000, function(event){
+    console.info("marker 1");
+})
+
+// add a marker that fires after 5 seconds
+timer.addMarker(5000, function(event){
+    console.info("marker 1");
+})
+
+timer.addEventListener("marker", function(event){
+    console.info("hit a marker");
+})
+
+//start the timer
+timer.play();
+```
+
 ## Changelog
 #### Version 0.1.0001
 * Initial release.
