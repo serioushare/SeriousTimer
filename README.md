@@ -17,7 +17,10 @@ The goal of SHTimer is to offer a timer that takes minimal code if you need simp
 * Use event listeners to respond to events happening within the timer
 
 ## Intallation
+### On Webpages
 #### Local installation
+1. Download the build version you want from the Builds directory.
+2. Place <script type="application/javascript" scr="path/to/shtimer(.min).js"></script> in your html page
 
 #### Hosted by us
 
