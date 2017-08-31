@@ -1,8 +1,7 @@
 <?
 header('Content-Type: application/javascript');
 
-include("src/readme.txt");
-include("src/const.js");
+include("const.js");
 ?>
 
 (function closure(){
