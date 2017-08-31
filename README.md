@@ -18,10 +18,10 @@ The goal of SeriousTimer is to offer a timer that takes minimal code if you need
 ## Examples
 #### Simple repeating timer
 ```javascript
-// create the timer 
+// create the timer with an interval of 1000 milliseconds
 var timer = new Timer(0, 1000);
 
-// add a listener to ontick
+// add a simple ontick listener
 timer.ontick = function(event){
     console.info("tick");
 }
@@ -29,23 +29,45 @@ timer.ontick = function(event){
 //start the timer
 timer.play();
 ```
+#### Using multiple listeners
+```javascript
+// the tick event listener
+function tickListener(event){
+    console.info("a tick event was raised")
+}
+
+// the update event listener
+function updateListener(event){
+    var modTime = event.returnValue % 1000;
+    document.body.style.backgroundColor = "hsl(" + Math.floor( (modTime / 1000) * 360 ) + ", 100%, 50%)";
+}
+
+// create the timer with an interval of 1000 milliseconds
+var timer = new Timer(0, 1000);
+
+timer.addEventListener("tick", tickListener);
+timer.addEventListener("update", updateListener);
+
+//start the timer
+timer.play();
+```
 #### Using markers
 ```javascript
 // create the timer
-var timer = new Timer(0);
+var timer = new Timer();
 
 // add a marker that fires after 1 second
 timer.addMarker(1000, function(event){
-    console.info("marker 1");
+    console.info("This only fires after 1 second");
 })
 
 // add a marker that fires after 5 seconds
 timer.addMarker(5000, function(event){
-    console.info("marker 1");
+    console.info("This only fires after 5 second");
 })
 
 timer.addEventListener("marker", function(event){
-    console.info("hit a marker");
+    console.info("This fires at each marker");
 })
 
 //start the timer
