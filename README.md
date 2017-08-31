@@ -38,8 +38,9 @@ function tickListener(event){
 
 // the update event listener
 function updateListener(event){
-    var modTime = event.returnValue % 1000;
-    document.body.style.backgroundColor = "hsl(" + Math.floor( (modTime / 1000) * 360 ) + ", 100%, 50%)";
+    var fadeTime = 10000
+    var modTime = event.returnValue % fadeTime;
+    document.body.style.backgroundColor = "hsl(" + Math.floor( (modTime / fadeTime) * 360 ) + ", 100%, 50%)";
 }
 
 // create the timer with an interval of 1000 milliseconds
