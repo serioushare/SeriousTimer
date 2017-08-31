@@ -1,5 +1,12 @@
 
 
+/**[SeriousBuilder]***************************************************************************
+ * Name:       SeriousTimer 
+ * Version:    0.1.0001 
+ * Language:   JavaScript 
+ *****************************************************************************[Serious Hare]**/
+
+
 /**[public class: Timer ]*********************************************************************
  * @remark:           This is the core class of the SHTimer API. It represents a complex and *
  *                    accurate timer that can be used for measure and control purposes.      *
@@ -674,7 +681,7 @@ function TimerMarker(time, callback){
 	if( typeof Math.toZero === "undefined"){
 		Math.toZero = toZero;
 	}else{
-		console.error( "Monkey Patch Failed: Math.toZero is already defined." );
+		console.error( "Math.toZero is already defined." );
 	}
 	
 	function toZero( number ){
