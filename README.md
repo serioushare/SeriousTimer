@@ -76,7 +76,7 @@ timer.play();
 ```
 
 ## Changelog
-#### Version 0.1.0001
+#### Version 0.1.0001 [Play]
 * Initial release.
 * Mostly commented and refactored.
 * Simple PHP builder file to put everything together.
