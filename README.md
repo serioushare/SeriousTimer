@@ -76,6 +76,11 @@ timer.play();
 ```
 
 ## Changelog
+#### Version 0.1.0002 [Getting Closure]
+* Moved everything into a closure.
+* Closure uses dynamic `context` instead of `window`.
+* Fixed handling of decimal (float) intervals.
+
 #### Version 0.1.0001 [Play]
 * Initial release.
 * Mostly commented and refactored.
