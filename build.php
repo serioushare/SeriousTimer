@@ -24,5 +24,7 @@ include("Source/$build/Classes/Timer.Statics.js");
 include("Source/$build/Classes/TimerEvent.js");
 include("Source/$build/Classes/TimerMarker.js");
 
+include("Source/$build/Extends/Context.js");
+
 include("Source/$build/Extends/Math.js");
 ?>
