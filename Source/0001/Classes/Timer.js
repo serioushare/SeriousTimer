@@ -382,7 +382,7 @@ function Timer(){
  *****************************************************************************[Serious Hare]**/
 	function setInterval(){
 		// Create an interval and attach the tick handler if there is no timer running.
-		if(interval == null && _withEvents) interval = window.setInterval(update, Timer.PRECISION);
+		if(interval == null && _withEvents) interval = context.setInterval(update, Timer.PRECISION);
 	}
 	
 	
@@ -392,7 +392,7 @@ function Timer(){
  *****************************************************************************[Serious Hare]**/
 	function clearInterval(){
 		// clear the interval
-		if(interval !== null) window.clearInterval(interval);
+		if(interval !== null) context.clearInterval(interval);
 		// set the interval reference to null
 		interval = null;
 	}
