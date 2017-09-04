@@ -79,3 +79,4 @@ timer.play();
 #### Version 0.1.0001
 * Initial release.
 * Mostly commented and refactored.
+* Simple PHP builder file to put everything together.
