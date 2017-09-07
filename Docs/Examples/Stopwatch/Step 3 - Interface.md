@@ -10,8 +10,8 @@ I made the choise to use input/button tags because it already has some styling.
 <div id="stopwatch">
   <input id="display" readonly="readonly" value="0" />
   <br />
-  <button id="start_stop">Start</button>
-  <button id="mark_reset">Reset</button>
+  <button id="start_stop" onclick="startStop()">Start</button>
+  <button id="mark_reset" onclick="reset()">Reset</button>
 </div>
 ```
 The input field will display the time, and the 2 buttons will control the stopwatch. The reset button is called `mark_reset`, we'll get to the reason for that in a later step.
