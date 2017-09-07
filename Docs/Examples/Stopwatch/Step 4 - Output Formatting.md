@@ -23,3 +23,8 @@ function update(){
   document.getElementById("display").value = format(timer.time);
 }
 ```
+
+#### [Previous: Step 3 - Interface][step_3] | [Next: Step 4 - Output Formatting][step_4]
+
+[step_3]: Step%203%20-%20Interface.md
+[step_4]: Step%204%20-%20Output%20Formatting.md
