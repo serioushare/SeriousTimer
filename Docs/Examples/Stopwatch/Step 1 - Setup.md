@@ -1,5 +1,5 @@
 # Stopwatch: Step 1 - Setup
-
+### Setting up the project
 The SeriousTimer.js examples can be build within multiple environments, like JSFiddle and CodePen. Below you 
 
 ## JSFiddle
