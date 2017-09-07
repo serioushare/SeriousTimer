@@ -10,11 +10,22 @@ I made the choise to use input/button tags because it already has some styling.
 <div id="stopwatch">
   <input id="display" readonly="readonly" value="0" />
   <br />
-  <button id="start_stop" onclick="startStop()">Start</button>
-  <button id="mark_reset" onclick="reset()">Reset</button>
+  <button id="start_stop">Start</button>
+  <button id="mark_reset">Reset</button>
 </div>
 ```
 The input field will display the time, and the 2 buttons will control the stopwatch. The reset button is called `mark_reset`, we'll get to the reason for that in a later step.
+
+#### Attaching Button Funtions
+Now we can attach the functions to the buttons. We do this with an immediately called init function. It attaches itself as onload event listener in case the page isn't loaded jet.
+```javascript
+// This function attaches the functions to the buttons;
+(function init(){
+  if(document.readyState!=="complete") return window.onload = init;
+  document.getElementById("start_stop").onclick = startStop;
+  document.getElementById("mark_reset").onclick = reset;
+}())
+```
 
 #### CSS-Styling
 If you want you can use the following css-code to apply some simple styling.
