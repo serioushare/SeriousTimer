@@ -10,8 +10,11 @@ This example demonstrates how to build a simple stopwatch. The most important fu
 * Convert milliseconds to a readable time
 
 #### Steps
-* Setting up the project environment
-* Creating the basic interface
+* [Setting up the project environment][step_1]
+* [Creating the basic interface][step_2]
 * Adding the first functions: start, stop, and reset
 * Formating the output
 * Add a mark function to keep track of multiple events
+
+[step_1]: Step%201%20-%20Setup.md
+[step_2]: Step%202%20-%20Interface.md
