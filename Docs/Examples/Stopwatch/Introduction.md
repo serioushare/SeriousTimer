@@ -11,10 +11,11 @@ This example demonstrates how to build a simple stopwatch. The most important fu
 
 #### Steps
 * [Setting up the project environment][step_1]
-* [Creating the basic interface][step_2]
-* Adding the first functions: start, stop, and reset
+* [Adding the first functions][step_2]
+* [Creating the basic interface][step_3]
 * Formating the output
 * Add a mark function to keep track of multiple events
 
 [step_1]: Step%201%20-%20Setup.md
-[step_2]: Step%202%20-%20Interface.md
+[step_2]: Step%202%20-%20Basic%20Functions.md
+[step_3]: Step%203%20-%20Interface.md
