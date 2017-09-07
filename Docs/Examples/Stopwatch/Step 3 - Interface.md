@@ -53,6 +53,7 @@ If you want you can use the following css-code to apply some simple styling.
 }
 ```
 
-#### [Previous: Step 2 - Basic Functions][step_2]
+#### [Previous: Step 2 - Basic Functions][step_2] | [Next: Step 4 - Output Formatting][step_4]
 
 [step_2]: Step%202%20-%20Basic%20Functions.md
+[step_4]: Step%204%20-%20Output%20Formatting.md
