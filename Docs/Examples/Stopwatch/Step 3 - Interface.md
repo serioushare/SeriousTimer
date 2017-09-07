@@ -1,4 +1,4 @@
-# Stopwatch: Step 2 - Interface
+# Stopwatch: Step 3 - Interface
 ### Creating the interface
 
 The first thing we need for the stopwatch is an interface. We'll start with the most basic elements that we need; A display, to show us the time and a start/stop button. A reset button would also be handy, so we don't have to keep reloading to reset the timer. We also need a panel to put everything in so we can style it more easily later on.
@@ -42,7 +42,6 @@ If you want you can use the following css-code to apply some simple styling.
 }
 ```
 
-#### [Previous: Step 1 - Setup][step_1] | [Next: Step 3 - Basic Functions][step_3]
+#### [Previous: Step 2 - Basic Functions][step_2]
 
-[step_1]: Step%201%20-%20Setup.md
-[step_3]: Step%203%20-%20Basic%20Functions.md
+[step_2]: Step%202%20-%20Basic%20Functions.md
