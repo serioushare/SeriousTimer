@@ -59,3 +59,14 @@ DEFAULT_TOP         | `true`   | `Number.POSITIVE_INFINITY`
 DEFAULT_LOOP        | `true`   | `false`
 DEFAULT_WITH_EVENTS | `true`   | `true`
 
+## Event types
+Name  | ReturnValue  | Triggers
+------|--------------|-----------------
+start | `timer.time` | This event is raised when the state changes from `Timer.STOPPED` to any other state.
+
+
+
+
+
+
+
