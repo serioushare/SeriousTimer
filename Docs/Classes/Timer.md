@@ -66,10 +66,10 @@ bottom    | `timer.time` | The timer hits it's bottom limit.
 narker    | `marker`     | The timer passes a marker.
 play      | `timer.time` | The state changed from `Timer.STOPPED` to any other state.
 reset     | `timer.time` | The timer is reset.
-stop      | `timer.time` | The state changed from any other state.
-tick      |
-top       |
-update    |
+stop      | `timer.time` | The state changed from any other state to `Timer.STOPPED`
+tick      | `timer.time` | The timer passes the set interval.
+top       | `timer.time` | The timer hits it's top limit.
+update    | `timer.time` | The internal update funtion was called.
 
 
 
