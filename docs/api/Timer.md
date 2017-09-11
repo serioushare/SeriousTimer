@@ -1,7 +1,55 @@
 # Class: Timer
-The `Timer` class represents a **SeriousTimer.js** timer with advanced control options and high precision events (no, not HPET).
+The `Timer` class represents a timer with advanced control options and high precision events (no, not HPET).
 
 Each timer also supports setting event handlers via `on...` properties.
+
+### Constructors
+**`Timer()`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Creates an `Timer` object, returning it to the caller.
+
+#### Parameters
+**`time`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Initial time for the timer. This is used when creating the timer, and as reset position.
+
+**`interval`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+This is the interval time at which the timer will dispatch a `tick` event.
+
+**`state`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Initial timer state: `Timer.PLAYING` or `Timer.STOPPED`.
+
+**`bottom`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+The lowest position the timer can reach.
+
+**`top`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+The highest position the timer can reach.
+
+**`loop`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Boolean value to indicate wether the timer loops.
+
+**`speed`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+The initial speed at which the timer progresses.
+
+**`withEvents`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Defines wether the timer fires events.
+
+### Properties
+
+
+
+
+
+
+
+
 
 ## Arguments
 All arguments are optional, following the order shown in the table.
