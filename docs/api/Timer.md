@@ -42,40 +42,50 @@ The initial speed at which the timer progresses.
 Defines wether the timer fires events.
 
 ### Properties
+**`Timer.bottom`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Get or set the lowest position that the timer can reach.
+
+**`Timer.interval`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Get or set the time between tick events.
+
+**`Timer.loop`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Get or set wether the timer loops when it reaches it's limit. Loops over to the opposing limit.
+
+**`Timer.speed`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Get or set the current progression speed of the timer.
+
+**`Timer.state`** `readonly`  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Get the current state of the timer.
+
+**`Timer.ticks`** ``readonly``  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Get the number of ticks between the initial timer position and the current position.
+
+**`Timer.time`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Get or set the current position of the timer.
+
+**`Timer.top`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Get or set the highest position that the timer can reach.
+
+### Methods
+**`Timer.addEventListener(type, listener)`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Registers an event handler to a specific event type on the timer.
+
+**`Timer.removeEventListener(type, listener)`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Removes an event listener from the timer.
 
 
 
 
-
-
-
-
-
-## Arguments
-All arguments are optional, following the order shown in the table.
-
-Name       | Default                       | Description
------------|-------------------------------|------------------------
-time       | `Number:0`                    | Initial time for the timer. This is used when creating the timer, and as reset points.
-interval   | `Number:1000`                 | This is the interval time at which the timer will dispatch a tick event.
-state      | `Number:0`                    | Initial timer state: `Timer.PLAYING` or `Timer.STOPPED`.
-bottom     | `Number:Timer.DEFAULT_BOTTOM` | The lowest position the timer can reach.
-top        | `Number:Timer.DEFAULT_TOP`    | The highest position the timer can reach.
-loop       | `Boolean:false`               | Boolean value to indicate wether the timer loops.
-speed      | `Number:1`                    | The initial speed at which the timer progresses.
-withEvents | `Boolean:true`                | Defines wether the timer fires events. 
-
-## Properties
-Name     | Type      | Default                 | Description
----------|-----------|-------------------------|--------------------------
-bottom   | `Number`  | `Timer.DEFAULT_BOTTOM`  | Get or set the lowest position that the timer can reach.
-interval | `Number`  | `1000`                  | Get or set the time between tick events.
-loop     | `Boolean` | `false`                 | Get or set wether the timer loops when it reaches it's limit. Loops over to the opposing limit.
-speed    | `Number`  | `1`                     | Get or set the current progression speed of the timer.
-state    | `Number`  | `0`                     | Get the current state of the timer.
-ticks    | `Number`  | `0`                     | Get the number of ticks between the initial timer position and the current position.
-time     | `Number`  | `0`                     | Get or set the current position of the timer.
-top      | `Number`  | `Timer.DEFAULT_TOP`     | Get or set the highest position that the timer can reach.
 
 ## Methods
 Name                | Arguments                          | Returns | Events         | Description
