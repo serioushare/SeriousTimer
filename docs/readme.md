@@ -2,10 +2,10 @@
 
 ### Index
 * API
-  * [Class: Timer][api.timer]
-  * [Class: TimerEvent][api.timerevent]
-  * Class: TimerMarker
-  * Extends: Math
+  * [Interface: Timer][api.timer]
+  * [Interface: TimerEvent][api.timerevent]
+  * [Interface: TimerMarker][api.timermarker]
+  * [Extends: Math][api.math]
 
 [api.timer]:       api/Timer.md
 [api.timerevent]:  api/TimerEvent.md
