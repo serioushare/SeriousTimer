@@ -1,5 +1,7 @@
 # Class: Timer
-The Timer class is the core class of the SeriousTimer.js API. It represents a timer with advanced control options and high precision events (no, not HPET).
+The `Timer` class represents a **SeriousTimer.js** timer with advanced control options and high precision events (no, not HPET).
+
+Each timer also supports setting event handlers via `on...` properties.
 
 ## Arguments
 All arguments are optional, following the order shown in the table.
