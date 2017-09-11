@@ -60,10 +60,16 @@ DEFAULT_LOOP        | `true`   | `false`
 DEFAULT_WITH_EVENTS | `true`   | `true`
 
 ## Event types
-Name  | ReturnValue  | Triggers
-------|--------------|-----------------
-start | `timer.time` | This event is raised when the state changes from `Timer.STOPPED` to any other state.
-
+Name      | ReturnValue  | Dispatched When
+----------|--------------|-----------------
+bottom    | `timer.time` | The timer hits it's bottom limit.
+narker    | `marker`     | The timer passes a marker.
+play      | `timer.time` | The state changed from `Timer.STOPPED` to any other state.
+reset     | `timer.time` | The timer is reset.
+stop      | `timer.time` | The state changed from any other state.
+tick      |
+top       |
+update    |
 
 
 
