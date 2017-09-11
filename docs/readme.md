@@ -1,2 +1,0 @@
-# SeriousTimer Documentation
-### Index
