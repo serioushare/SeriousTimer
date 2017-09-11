@@ -1,5 +1,5 @@
 # Interface: TimerEvent
-The `TimerEvent` class represents the events dispatched by SeriousTimer.js
+The `TimerEvent` class represents the events dispatched by the `Timer` instances
 
 ### Constructor
 **`TimerEvent()`**  
