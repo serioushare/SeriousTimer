@@ -2,7 +2,7 @@
 
 ### Index
 * Introduction
-* API
+* API Reference
   * [Class: Timer][api.timer]
   * [Class: TimerEvent][api.timerevent]
   * [Class: TimerMarker][api.timermarker]
