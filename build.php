@@ -1,9 +1,9 @@
 <?
 header('Content-Type: application/javascript');
 
-$build = $_GET["b"]? in_array($_GET["b"], scandir("Source"))? $_GET["b"] : array_pop(scandir("Source")) : array_pop(scandir("Source"));
+$build = $_GET["b"]? in_array($_GET["b"], scandir("source"))? $_GET["b"] : array_pop(scandir("source")) : array_pop(scandir("source"));
 
-$build_raw = file_get_contents("Source/$build/build.json");
+$build_raw = file_get_contents("source/$build/build.json");
 $buildplan = json_decode($build_raw);
 
 $version  = $buildplan->version->major.".";
@@ -25,7 +25,7 @@ if($buildplan->use_closure)echo "(function closure(context){\n";
 
 for($i=0; $i<count($buildplan->files); $i++){
 	$file = $buildplan->files[$i]->path;
-	include("Source/$build/$file");
+	include("source/$build/$file");
 }
 
 if($buildplan->use_closure)echo "}(this))";
