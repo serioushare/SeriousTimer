@@ -3,7 +3,7 @@ The `Timer` class represents a timer with advanced control options and high prec
 
 Each timer also supports setting event handlers via `on...` properties.
 
-### Constructors
+## Constructors
 **`Timer()`**  
 &nbsp;&nbsp;&nbsp;&nbsp;
 Creates an `Timer` object, returning it to the caller.
@@ -41,7 +41,7 @@ The initial speed at which the timer progresses.
 &nbsp;&nbsp;&nbsp;&nbsp;
 Defines wether the timer fires events.
 
-### Properties
+## Properties
 **`Timer.bottom`**  
 &nbsp;&nbsp;&nbsp;&nbsp;
 Get or set the lowest position that the timer can reach.
@@ -74,7 +74,7 @@ Get or set the current position of the timer.
 &nbsp;&nbsp;&nbsp;&nbsp;
 Get or set the highest position that the timer can reach.
 
-### Methods
+## Methods
 **`Timer.addEventListener(type, listener)`**  
 &nbsp;&nbsp;&nbsp;&nbsp;
 Registers an event handler to a specific event type on this timer.
@@ -123,7 +123,7 @@ Resets the timer to it's initial configuration. Does not change the state.
 &nbsp;&nbsp;&nbsp;&nbsp;
 Stops the timer and resets it to it's initial configuration.
 
-### Static Constants
+## Static Constants
 **`Timer.DEFAULT_BOTTOM`**  
 &nbsp;&nbsp;&nbsp;&nbsp;
 Default bottom limit of the timer.
@@ -168,18 +168,42 @@ Default top limit of the timer.
 &nbsp;&nbsp;&nbsp;&nbsp;
 Contant Integer to indicate the timers state as stopped
 
-
 ## Event types
-Name      | ReturnValue  | Dispatched When
-----------|--------------|-----------------
-bottom    | `timer.time` | The timer hits it's bottom limit.
-narker    | `marker`     | The timer passes a marker.
-play      | `timer.time` | The state changed from `Timer.STOPPED` to any other state.
-reset     | `timer.time` | The timer is reset.
-stop      | `timer.time` | The state changed from any other state to `Timer.STOPPED`
-tick      | `timer.time` | The timer passes the set interval.
-top       | `timer.time` | The timer hits it's top limit.
-update    | `timer.time` | The internal update funtion was called.
+**`bottom`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+The timer hits it's bottom limit.
+
+**`narker`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+The timer passes a marker.
+
+**`play`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+The state changed from `Timer.STOPPED` to any other state.
+
+**`reset`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+The timer is reset.
+
+**`stop`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+The state changed from any other state to `Timer.STOPPED`.
+
+**`tick`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+The timer passes the set interval.
+
+**`top`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+The timer hits it's top limit.
+
+**`update`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+The internal update funtion was called.
+
+
+
+
 
 
 
