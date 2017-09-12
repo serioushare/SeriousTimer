@@ -1,4 +1,4 @@
-# Changelog
+## Changelog
 #### Version 0.1.0002 [Getting Closure]
 * Moved everything into a closure.
 * Closure uses dynamic `context` instead of `window`.
