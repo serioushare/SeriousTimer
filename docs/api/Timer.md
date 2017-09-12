@@ -81,7 +81,7 @@ Registers an event handler to a specific event type on this timer.
 
 **`Timer.addMarker({marker|time[, callback]})`**  
 &nbsp;&nbsp;&nbsp;&nbsp;
-Places a marker on the timers marker list, and returns the index at which it's placed. It accepts either a `TimerMarker` or, a `Number` as first argument. If a `Number` is used a new `TimerMarker` instance is created and than the optional `callback` is registered as event listener for this specific marker.
+Places a marker on the timers marker list, and returns the index at which it's placed. It accepts either a `TimerMarker` or a `Number` as first argument. If a `Number` is used a new `TimerMarker` instance is created and the optional `callback` is registered as event listener for this specific marker.
 
 **`Timer.dispatchEvent(event)`**  
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -123,8 +123,18 @@ Resets the timer to it's initial configuration. Does not change the state.
 &nbsp;&nbsp;&nbsp;&nbsp;
 Stops the timer and resets it to it's initial configuration.
 
+### Static Constants
+**`Timer.DEFAULT_BOTTOM`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Default bottom limit of the timer.
 
+**`Timer.DEFAULT_INTERVAL`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Default time between `tick` events.
 
+**`Timer.DEFAULT_LOOP`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Default time between `tick` events.
 
 
 
