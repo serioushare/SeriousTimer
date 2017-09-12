@@ -77,32 +77,56 @@ Get or set the highest position that the timer can reach.
 ### Methods
 **`Timer.addEventListener(type, listener)`**  
 &nbsp;&nbsp;&nbsp;&nbsp;
-Registers an event handler to a specific event type on the timer.
+Registers an event handler to a specific event type on this timer.
+
+**`Timer.addMarker({marker|time[, callback]})`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Places a marker on the timers marker list, and returns the index at which it's placed. It accepts either a `TimerMarker` or, a `Number` as first argument. If a `Number` is used a new `TimerMarker` instance is created and than the optional `callback` is registered as event listener for this specific marker.
+
+**`Timer.dispatchEvent(event)`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Dispatch an event to this timer.
+
+**`Timer.fastBackward()`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Sets `Timer.speed` to -2 times the initial speed and starts the timer at it's current position.
+
+**`Timer.fastForward()`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Sets `Timer.speed` to 2 times the initial speed and starts the timer at it's current position.
+
+**`Timer.pause()`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Stops the timer, but does not reset it.
+
+**`Timer.play()`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Sets `Timer.speed` to the initial speed and starts the timer at it's current position.
+
+**`Timer.playBackward()`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Sets `Timer.speed` to -1 times the initial speed and starts the timer at it's current position.
 
 **`Timer.removeEventListener(type, listener)`**  
 &nbsp;&nbsp;&nbsp;&nbsp;
-Removes an event listener from the timer.
+Removes an event listener from this timer.
+
+**`Timer.removeMarker(marker)`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Removes a marker from the marker list.
+
+**`Timer.reset()`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Resets the timer to it's initial configuration. Does not change the state.
+
+**`Timer.stop()`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Stops the timer and resets it to it's initial configuration.
 
 
 
 
 
-## Methods
-Name                | Arguments                          | Returns | Events         | Description
---------------------|------------------------------------|---------|----------------|--------------------------
-addEventListener    | `String:type`, `Function:listener` |         |                | Adds `Function:listener` to the list of listeners for events of type `String:type`.
-addMarker           | `TimerMarker:marker`               | `index` |                | places `TimerMarker:marker` on the marker list, and returns the index at which it's placed.
-addMarker           | `Number:time`, `Function:callback` | `index` |                | Creates a new `TimerMarker` on the marker list, and returns the index at which it's placed. Callback is stored within the marker and is called before the marker event dispatches.
-dispatchEvent       | `TimerEvent:event`                 |         |                | Dispatches `TimerEvent:event` on the timer, raising all event listeners for `String:event.type`.
-fastBackward        |                                    |         | `play`         | Sets `timer.speed` to `-2 * initialSpeed` and starts the timer at it's current position.
-fastForward         |                                    |         | `play`         | Sets `timer.speed` to `2 * initialSpeed` and starts the timer at it's current position.
-pause               |                                    |         | `stop`         | Stops the timer, but does not reset it.
-play                |                                    |         | `play`         | Sets `timer.speed` to `initialSpeed` and starts the timer at it's current position.
-playBackward        |                                    |         | `play`         | Sets `timer.speed` to `-1 * initialSpeed` and starts the timer at it's current position.
-removeEventListener | `String:type`, `Function:listener` |         |                | Removes `Function:listener` to the list of listeners for events of type `String:type`.
-removeMarker        | `TimerMarker:marker`               |         |                | Removes `TimerMarker:marker` from the list of markers.
-reset               |                                    |         | `reset`        | Resets the timer to it's initial position. Does not change the state.
-stop                |                                    |         | `stop`,`reset` | Stops the timer and resets it to it's initial position.
 
 ## Statics Constants (Used for the Timers default values)
 Name                | Constant | Value
