@@ -5,7 +5,7 @@
 		<title>SeriousTimer.js Testpage</title>
 		<link rel="stylesheet" type="text/css" href="css/stimer.css">
 		<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<script type="text/javascript" src="build.php"></script>
+		<script type="text/javascript" src="/build.php"></script>
 		<script>
 			function run(){
 <?=$_POST["c"]?>
