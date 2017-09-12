@@ -134,24 +134,40 @@ Default time between `tick` events.
 
 **`Timer.DEFAULT_LOOP`**  
 &nbsp;&nbsp;&nbsp;&nbsp;
-Default time between `tick` events.
+Default behavior when the timer reaches one of its limits.
 
+**`Timer.DEFAULT_PLAYSTATE`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Default timer state.
 
+**`Timer.DEFAULT_SPEED`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Default timer state.
 
-## Statics Constants (Used for the Timers default values)
-Name                | Constant | Value
---------------------|----------|-----------------
-PRECISION           | `true`   | `1`
-STOPPED             | `true`   | `0`
-PLAYING             | `true`   | `0`
-DEFAULT_TIME        | `true`   | `0`
-DEFAULT_INTERVAL    | `true`   | `1000`
-DEFAULT_PLAYSTATE   | `true`   | `Timer.STOPPED`
-DEFAULT_SPEED       | `true`   | `1`
-DEFAULT_BOTTOM      | `true`   | `Number.NEGATIVE_INFINITY`
-DEFAULT_TOP         | `true`   | `Number.POSITIVE_INFINITY`
-DEFAULT_LOOP        | `true`   | `false`
-DEFAULT_WITH_EVENTS | `true`   | `true`
+**`Timer.DEFAULT_TIME`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Default timer state.
+
+**`Timer.DEFAULT_TOP`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Default top limit of the timer.
+
+**`Timer.DEFAULT_WITH_EVENTS`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Default timer state.
+
+**`Timer.PLAYING`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Contant Integer to indicate the timers state as playing
+
+**`Timer.PRECISION`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Default top limit of the timer.
+
+**`Timer.STOPPED`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Contant Integer to indicate the timers state as stopped
+
 
 ## Event types
 Name      | ReturnValue  | Dispatched When
