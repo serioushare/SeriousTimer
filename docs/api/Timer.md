@@ -5,14 +5,17 @@ Each timer also supports setting event handlers via `on...` properties.
 
 ### Constructors
 **`Timer()`**  
-> Creates an `Timer` object, returning it to the caller.
+&nbsp;&nbsp;&nbsp;&nbsp;
+Creates an `Timer` object, returning it to the caller.
 
 #### Parameters
-**`time`**
-> Initial time for the timer. This is used when creating the timer, and as reset position.
+**`time`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+Initial time for the timer. This is used when creating the timer, and as reset position.
 
-**`interval`**
-> This is the interval time at which the timer will dispatch a `tick` event.
+**`interval`**  
+&nbsp;&nbsp;&nbsp;&nbsp;
+This is the interval time at which the timer will dispatch a `tick` event.
 
 **`state`**  
 &nbsp;&nbsp;&nbsp;&nbsp;
