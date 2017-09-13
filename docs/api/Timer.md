@@ -62,7 +62,7 @@ Get or set the current progression speed of the timer.
 &nbsp;&nbsp;&nbsp;&nbsp;
 Get the current state of the timer.
 
-**`Timer.ticks`** ``readonly``  
+**`Timer.ticks`** `readonly`  
 &nbsp;&nbsp;&nbsp;&nbsp;
 Get the number of ticks between the initial timer position and the current position.
 
