@@ -7,6 +7,16 @@ Each timer also supports setting event handlers via `on...` properties.
 **`Timer()`**  
 Creates an `Timer` object, returning it to the caller.
 
+#### Syntac
+```javascript
+timer = new Timer([withEvent]);
+timer = new Timer(time[, withEvent]);
+timer = new Timer(time, interval[, withEvent]);
+timer = new Timer(time, interval, state[, withEvent]);
+timer = new Timer(time, interval, state, bottom, top, loop[, withEvent]);
+timer = new Timer(time, interval, state, bottom, top, loop, speed[, withEvent]);
+```
+
 #### Parameters
 **`time`**  
 Initial time for the timer. This is used when creating the timer, and as reset position.
