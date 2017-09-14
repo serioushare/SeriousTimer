@@ -6,7 +6,7 @@ The `TimerMarker` class represents the markers that can be placed on the `Timer`
 Creates an TimerMarker object, returning it to the caller.
 
 #### Syntax
-```[javascript]
+```javascript
 marker = new TimerMarker(time);
 marker = new TimerMarker(time, callback);
 ```
