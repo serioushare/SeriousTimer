@@ -1,0 +1,16 @@
+{
+	"project":"SeriousTimer",
+	"version":{
+		"major":0,
+		"minor":1,
+		"build":3
+	},
+	"use_closure":true,
+	"files":[
+		{"path": "classes/Timer.js"},
+		{"path": "classes/Timer.Statics.js"},
+		{"path": "classes/TimerEvent.js"},
+		{"path": "classes/TimerMarker.js"},
+		{"path": "extends/Math.js"}
+	]
+}
