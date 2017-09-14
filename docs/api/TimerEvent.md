@@ -20,7 +20,7 @@ Defines what type the `TimerEvent` is.
 
 **`eventInit`**  
 Initial variables used for the event, as Object:  
-```
+```javascript
 eventInit = {
     time: overrideTime      // optional override TimerEvent.time
 }
