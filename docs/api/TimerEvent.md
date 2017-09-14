@@ -6,7 +6,7 @@ The `TimerEvent` class represents the events dispatched by timer instances.
 Creates an `TimerEvent` object, returning it to the caller.
 
 #### Syntax
-```[javascript]
+```javascript
 event = new TimerEvent(typeArg, eventInit);
 event = new TimerEvent(typeArg, marker);
 // deprecated constructors
