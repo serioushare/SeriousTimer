@@ -1,4 +1,4 @@
-# Inroduction
+# Introduction
 
 While working on an other project, I found myself in need of a javascript timer that had some more complex features. For instance, it needed to go both ways (counting up or down), work with times below zero, support different speeds, and trigger events at irregular points instead of a constant interval.
 
