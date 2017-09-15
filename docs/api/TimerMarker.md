@@ -1,5 +1,5 @@
 # Class: TimerMarker
-The `TimerMarker` class represents the markers that can be placed on the [`Timer`][api.timer] instances.
+The `TimerMarker` class represents the markers that can be placed on a [`Timer`][api.timer].
 
 ## Constructor
 **`TimerMarker()`**  
