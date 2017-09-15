@@ -2,7 +2,7 @@
 The `TimerMarker` class represents the markers that can be placed on a [`Timer`][api.timer] using the `Timer.addMarker` method. When a timer passes an added marker, it dispatches a [`TimerEvent`][api.timerevent] of type `marker` on the timer.
 
 ## Constructor
-**`TimerMarker()`**  
+##### `TimerMarker()`
 Creates an TimerMarker object, returning it to the caller.
 
 #### Syntax
