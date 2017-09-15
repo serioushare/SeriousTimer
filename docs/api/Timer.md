@@ -1,9 +1,9 @@
 # Class: Timer
-The `Timer` class represents a timer with advanced control options and high precision events (no, not HPET). All events are dispatch the same way as regular events (like those of DOM Elements). They return a [`TimerEvent`][api.timerevent] which inherits [`Event`][ext.event].
+The `Timer` class represents a timer with advanced control options and high precision events (no, not HPET). All events are dispatch the same way as regular events (like those of DOM Elements). They return a [`TimerEvent`][api.timerevent] which inherits [`Event`][ext.event] to the listeners registered to the specific event type.
 
 Each timer also supports setting event handlers via `on...` properties.
 
-## Constructors
+## Constructor
 **`Timer()`**  
 Creates an `Timer` object, returning it to the caller.
 
@@ -142,7 +142,7 @@ Contant Integer to indicate the timers state as stopped
 **`bottom`**  
 The timer hits it's bottom limit.
 
-**`narker`**  
+**`marker`**  
 The timer passes a marker.
 
 **`play`**  
