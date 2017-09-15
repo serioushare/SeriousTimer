@@ -14,5 +14,5 @@
 [api.timermarker]: api/TimerMarker.md
 [api.math]:        api/Math.md
 [introduction]:    pag/introduction.md
-[apireference]:    pag/apiref.md
+[apireference]:    pag/apireference.md
 [changelog]:       pag/changelog.md
