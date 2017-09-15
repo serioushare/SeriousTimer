@@ -30,4 +30,5 @@ The callback function of the timer. Is called by `Timer.dispathEvent` and handed
 
 
 [api.timer]:       Timer.md
+[api.timerevent]:  TimerEvent.md
 
