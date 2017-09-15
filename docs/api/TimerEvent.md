@@ -1,5 +1,5 @@
 # Class: TimerEvent
-The `TimerEvent` class represents the events dispatched by timer instances.
+The `TimerEvent` class represents the events dispatched by a [`Timer`][api.timer]. It inherits [`Event`][ext.event] if it's available using `this.__proto__.__proto__` to make sure that `instanceof` returns true when compating to both `TimerEvent` and [`Event`][ext.event].
 
 ## Constructor
 **`TimerEvent()`**  
@@ -27,7 +27,7 @@ eventInit = {
 ```
 
 **`marker`**  
-Reference to the `TimerMarker` that triggered the event.
+Reference to the [`TimerMarker`][api.timermarker] that triggered the event.
 
 **`target`** `deprecated`  
 Reference to the creator of the `TimerEvent`.
@@ -61,7 +61,7 @@ A dummy property to override `Event.eventPhase`.
 A Boolean indicating wether the event is created by a timer.
 
 **`TimerEvent.marker`** `readonly`  
-A reference to the marker that triggerd the event.
+A reference to the [`TimerMarker`][api.timermarker] that triggerd the event.
 
 **`TimerEvent.path`** `readonly`  
 A dummy property to override `Event.path`.
@@ -89,6 +89,8 @@ String containing the type of the event.
 
 
 
-
+[api.timer]:       Timer.md
+[api.timermarker]: TimerMarker.md
+[ext.event]:       https://developer.mozilla.org/en-US/docs/Web/API/Event/Event
 
 
