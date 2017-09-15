@@ -1,5 +1,5 @@
 # Class: TimerMarker
-The `TimerMarker` class represents the markers that can be placed on the `Timer` instances.
+The `TimerMarker` class represents the markers that can be placed on the [`Timer`][api.timer] instances.
 
 ## Constructor
 **`TimerMarker()`**  
@@ -25,4 +25,9 @@ The position of the marker on the timer.
 **`TimerMarker.callback`** `readonly`  
 The callback function of the timer. Is called by `Timer.dispathEvent` and handed a event as first argument.
 
+
+
+
+
+[api.timer]:       Timer.md
 
