@@ -1,5 +1,5 @@
 # Class: Timer
-The `Timer` class represents a timer with advanced control options and high precision events (no, not HPET).
+The `Timer` class represents a timer with advanced control options and high precision events (no, not HPET). All events are dispatch the same way as regular events (like those of DOM Elements). They return a [`TimerEvent`][api.timerevent] which inherits [`Event`][ext.event].
 
 Each timer also supports setting event handlers via `on...` properties.
 
@@ -72,7 +72,7 @@ Get or set the highest position that the timer can reach.
 Registers an event handler to a specific event type on this timer.
 
 **`Timer.addMarker({marker|time[, callback]})`**  
-Places a marker on the timers marker list, and returns the index at which it's placed. It accepts either a `TimerMarker` or a `Number` as first argument. If a `Number` is used a new `TimerMarker` instance is created and the optional `callback` is registered as event listener for this specific marker.
+Places a marker on the timers marker list, and returns the index at which it's placed. It accepts either a [`TimerMarker`][api.timermarker] or a [`Number`][ext.number] as first argument. If a [`Number`][ext.number] is used a new [`TimerMarker`][api.timermarker] instance is created and the optional `callback` is registered as event listener for this specific marker.
 
 **`Timer.dispatchEvent(event)`**  
 Dispatch an event to this timer.
@@ -168,7 +168,8 @@ The internal update funtion was called.
 
 
 
-
-
-
+[api.timerevent]:  TimerEvent.md
+[api.timermarker]: TimerMarker.md
+[ext.event]:       https://developer.mozilla.org/en-US/docs/Web/API/Event/Event
+[ext.number]:      https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
 
