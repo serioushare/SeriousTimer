@@ -2,7 +2,7 @@
 
 ### Index
 * [Introduction][introduction]
-* API Reference
+* [API Reference][apiref]
   * [Class: Timer][api.timer]
   * [Class: TimerEvent][api.timerevent]
   * [Class: TimerMarker][api.timermarker]
@@ -13,5 +13,6 @@
 [api.timerevent]:  api/TimerEvent.md
 [api.timermarker]: api/TimerMarker.md
 [api.math]:        api/Math.md
-[changelog]:       pag/changelog.md
 [introduction]:    pag/introduction.md
+[apiref]:          pag/apiref.md
+[changelog]:       pag/changelog.md
