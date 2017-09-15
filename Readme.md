@@ -1,9 +1,12 @@
 # SeriousTimer.js by Serious Hare
 
 ## Introduction
+
 While working on an other project, I found myself in need of a javascript timer that had some more complex features. For instance, it needed to go both ways (counting up or down), work with times below zero, support different speeds, and trigger events at irregular points instead of a constant interval.
 
 The goal of SeriousTimer is to offer a timer that takes minimal code if you need simple operation, but also offer lots of options for more complex scenarios.
+
+> This API is still in an early state and it's functionality and syntax might still undergo slight changes. Where possible I'll try to keep the old syntax available. I'll keep these changes to an absolute minimal. All breaking changes will be listed below.
 
 ## Features
 * Control the state (play/pause/stop)
